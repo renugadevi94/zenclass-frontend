@@ -2,21 +2,21 @@ import React, {useContext}  from "react"
 import './App.css'
 
 import { Route,Routes } from "react-router-dom"
-import Login from "./main/login.jsx"
+import Login from "./main/login"
 import Signup from "./main/Signup"
 import Confirmation from "./main/Confirmation";
 import Dashboard from "./main/Dashboard";
-import DataContext from "./context/DataContext.jsx";
-import Header from "./components/Header.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Roadmap from "./main/Roadmap.jsx";
-import Task from "./main/Task.jsx";
-import Certificate from "./main/Certificate.jsx";
-import Mock from "./main/Mock.jsx";
-import Leave from "./main/Leave.jsx";
-import Portfolio from "./main/Portfolio.jsx";
-import Queries from "./main/Queries.jsx";
-import Capstone from "./main/Capstone.jsx";
+import DataContext from "./context/DataContext";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Roadmap from "./main/Roadmap";
+import Task from "./main/Task";
+import Certificate from "./main/Certificate";
+import Mock from "./main/Mock";
+import Leave from "./main/Leave";
+import Portfolio from "./main/Portfolio";
+import Queries from "./main/Queries";
+import Capstone from "./main/Capstone";
 import Webcode from "./main/Webcode"
 
 function App() {
