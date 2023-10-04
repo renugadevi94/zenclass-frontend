@@ -1,0 +1,32 @@
+* Style the container */
+.dashboard {
+  padding: 20px;
+}
+
+/* Style the section headings */
+.activities__box h3 {
+  background-color: #4b0dba;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.codekata, 
+.webkata{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center-align items */
+    justify-content: center; /* Vertically center-align items */
+    text-align: center; /* Center-align text within the elements */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ddd; /* Optional border for styling */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /
+}
+/* Style the charts */
+.activities__box .chart-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,47 @@
+.top__header {
+  height: 96px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 0 24px;
+  border-bottom: 1.5px solid #dedede;
+  user-select: none;
+  background-color:blue;
+}
+.top__header .heading {
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  margin-left: 60px;
+  font-size: 40px;
+}
+.user__profile {
+  align-items: start;
+  padding-bottom: 10px;
+}
+.user__name {
+  color: white
+}
+.dropdown-menu {
+  padding: 0 !important;
+}
+.dropdown-item:hover {
+  background-color:wheat !important;
+}
+.user__logo {
+  height: 60px;
+  width: 60px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  color: red;
+  font-size: 28px;
+  transition: 0.3s;
+}
+.user__logo:hover {
+  scale: 1.1;
+  box-shadow: 0 0 10px var(--theme);
+}
+.dropdown-menu {
+  transition: 0.3s;
+}
