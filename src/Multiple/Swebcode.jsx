@@ -2,9 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import "./webcode.css";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import DataContext from '../context/DataContext';
-//import { ToastContainer, Zoom } from "react-toastify";
-
-const Webcode = () => {
+function Swebcode() {
     const { loggedUser, webCode, fetchWebcode, handleWebcode, trigger, setTrigger, isLoading } = useContext(DataContext);
 
     const [formData, setFormData] = useState({
@@ -283,5 +281,4 @@ const Webcode = () => {
         </section>
     );
 };
-
-export default Webcode;
+export default Swebcode

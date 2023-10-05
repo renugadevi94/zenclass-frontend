@@ -2,9 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import "./queries.css";
 import { BiPlus } from "react-icons/bi";
 import DataContext from '../context/DataContext';
-//import { ToastContainer, Zoom } from "react-toastify";
 
-const Queries = () => {
+function Tqueries() {
     const { query, trigger, setTrigger, fetchQuery, handleAddQuery, handleQueryCancel, isLoading } = useContext(DataContext);
 
     useEffect(() => {
@@ -157,4 +156,4 @@ const Queries = () => {
     )
 }
 
-export default Queries;
+export default Tqueries

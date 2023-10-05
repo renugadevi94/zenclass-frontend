@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-
-const Certificate = () => {
+function Ncertificate() {
+  
     return (
         <section>
            <div className="p-3 secondaryTheme text-center" style={{ fontSize: '24px' }}>
@@ -10,5 +10,4 @@ const Certificate = () => {
         </section>
     )
 }
-
-export default Certificate;
+export default Ncertificate

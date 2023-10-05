@@ -3,7 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 //import LOGO from "../../assets/logo.png"
 import DataContext from '../context/DataContext';
 
-const Confirmation = () => {
+
+function Verify() {
+  
     const { handleConfirm, setResetToken } = useContext(DataContext);
     const { id } = useParams();
     useEffect(() => {
@@ -29,4 +31,4 @@ const Confirmation = () => {
     )
 }
 
-export default Confirmation
+export default Verify

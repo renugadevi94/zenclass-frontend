@@ -4,8 +4,8 @@ import TaskUrl from '../components/TaskUrl';
 import { useContext } from 'react';
 import DataContext from '../context/DataContext';
 
-
-const Task = () => {
+function Rtask() {
+  
     const { loggedUser, fetchTask, DBTask } = useContext(DataContext);
 
     useEffect(() => {
@@ -95,5 +95,4 @@ const Task = () => {
         </section>
     )
 }
-
-export default Task;
+export default Rtask

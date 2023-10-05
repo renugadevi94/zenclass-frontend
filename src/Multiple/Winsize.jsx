@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 
-const Responsive = () => {
+function Winsize() {
     let [windowSize, setWindowSize] = useState({
         width: undefined,
     });
@@ -14,6 +14,6 @@ const Responsive = () => {
         return () => window.addEventListener("resize", handleResize);
     }, []);
     return windowSize;
-};
+}; 
 
-export default Responsive;
+export default Winsize

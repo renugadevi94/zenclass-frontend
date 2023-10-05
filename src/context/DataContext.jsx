@@ -3,14 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import api from "../api";
 import { roadMapData } from "../roadmapdata";
-import Responsive from "../multiple/Responsive";
+import Winsize from "../multiple/Winsize";
 
 
 const DataContext = createContext({});
 
 export const DataProvider = ({ children }) => {
     
-    const { width }=Responsive();
+    const { width }=Winsize();
     const [head, setHead] = useState("");
     const [loggedUser, setLoggedUser] = useState("");
     const [token, setToken] = useState("");

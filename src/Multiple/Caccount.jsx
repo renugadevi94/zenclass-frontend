@@ -3,9 +3,8 @@ import './signup.css';
 import { Link } from 'react-router-dom';
 import zen from "../assets/zen.png"
 import DataContext from '../context/DataContext';
-//import { ToastContainer, Zoom } from "react-toastify";
 
-const Signup = () => {
+function Caccount() {
     const { handleSignUp, isLoading } = useContext(DataContext);
 
     const [formData, setFormData] = useState({
@@ -142,108 +141,5 @@ const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     )
 }
 
-export default Signup;
 
-
-
-
-
-// import React, { useState,useContext } from 'react';
-// import { Link } from 'react-router-dom';
-// import DataContext from '../context/DataContext';
-// import "./signup.css";
-// //import { toast } from 'react-toastify'; 
-
-
-// const Signup = () => {
-//     const { handleSignUp, isLoading } = useContext(DataContext);
-//   const [formData, setFormData] = useState({
-//     fname: '',
-//     lname: '',
-//     email: '',
-//     password: '',
-//     confirmpassword:'',
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({
-//       ...formData,
-//       [name]: value,
-//     });
-//   };
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-    
-//      handleSignUp(formData);
-   
-//   };
-
-//   return (
-//     <div className="signup-container">
-//       <div className="signup-form">
-//         <h2>Signup</h2>
-//         <form onSubmit={handleSubmit}>
-//           <div className="form-group">
-//             <label>First Name</label>
-//             <input
-//               type="text"
-//               name="fname"
-//               value={formData.fname}
-//               onChange={handleChange}
-//             />
-//           </div>
-//           <div className="form-group">
-//             <label>Last Name</label>
-//             <input
-//               type="text"
-//               name="lname"
-//               value={formData.lname}
-//               onChange={handleChange}
-//             />
-//           </div>
-//           <div className="form-group">
-//             <label>Email</label>
-//             <input
-//               type="email"
-//               name="email"
-//               value={formData.email}
-//               onChange={handleChange}
-//             />
-//           </div>
-//           <div className="form-group">
-//             <label>Password</label>
-//             <input
-//               type="password"
-//               name="password"
-//               value={formData.password}
-//               onChange={handleChange}
-//             />
-//           </div>
-//           <div className="form-group">
-//             <label>Confirm Password</label>
-//             <input
-//               type="password"
-//               name="confirmpassword"
-//               value={formData.confirmpassword}
-//               onChange={handleChange}
-//             />
-//           </div>
-//           <button
-//           type="submit"
-//           className="col-12 btn btn-lg btn-block login__btn mt-4 mb-4 d-flex justify-content-center"
-//           disabled={isLoading}
-//         >
-//           {isLoading ? <span className="spinner-border text-warning"></span> : "Register"}
-//         </button>
-//         </form>
-//         <Link to="/" className="login-form">
-//           Go to Login
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Signup;
+export default Caccount;

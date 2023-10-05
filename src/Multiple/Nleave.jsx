@@ -2,9 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import "./leave.css";
 import { BiPlus } from "react-icons/bi";
 import DataContext from '../context/DataContext';
-//import { ToastContainer, Zoom } from "react-toastify";
 
-const Leave = () => {
+function Nleave() {
     const { leave, trigger, setTrigger, fetchLeave, handleAddLeave, handleLeaveCancel, isLoading } = useContext(DataContext);
     const [formData, setFormData] = useState({
         reason: "",
@@ -154,5 +153,4 @@ const Leave = () => {
         </section>
     );
 }
-
-export default Leave;
+export default Nleave

@@ -2,14 +2,13 @@ import React, { useEffect, useContext } from 'react';
 import "./mock.css";
 import DataContext from '../context/DataContext';
 
-const Mock = () => {
-    
+function Imock() {
     const { mock, loggedUser, fetchMock } = useContext(DataContext);
 
     useEffect(() => {
         fetchMock();
     }, []);
-    //
+    
     return (
         <section className='mock mt-5'>
             {
@@ -137,4 +136,4 @@ const Mock = () => {
     )
 }
 
-export default Mock;
+export default Imock

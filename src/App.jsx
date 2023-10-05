@@ -3,25 +3,38 @@ import './App.css'
 
 import { Route,Routes } from "react-router-dom"
 
-import Signup from "./multiple/Signup"
+//import Signup from "./multiple/Signup"
 
 import DataContext from "./context/DataContext";
+
+
+
+
+
+
+
+// import Webcode from "./multiple/Webcode"
+// import Capstone from "./Multiple/Capstone";
+
+
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Roadmap from "./multiple/Roadmap";
-import Task from "./multiple/Task";
-
-import Mock from "./multiple/Mock";
-import Leave from "./multiple/Leave";
-import Portfolio from "./multiple/Portfolio";
-import Queries from "./multiple/Queries";
-
-import Webcode from "./multiple/Webcode"
-import Capstone from "./Multiple/Capstone";
-import Certificate from "./Multiple/Certificate";
-import Dashboard from "./Multiple/Dashboard";
-import Confirmation from "./Multiple/Confirmation";
 import Home from "./multiple/Home";
+import Caccount from "./multiple/Caccount";
+import Verify from "./multiple/Verify";
+import Zroadmap from "./multiple/Zroadmap";
+import Ndashboard from "./multiple/Ndashboard";
+import Rtask from "./multiple/Rtask";
+import Ncertificate from "./multiple/Ncertificate";
+import Imock from "./multiple/Imock";
+import Nleave from "./multiple/Nleave";
+import Cportfolio from "./multiple/Cportfolio";
+import Tqueries from "./multiple/Tqueries";
+import Scapstone from "./multiple/Scapstone";
+import Swebcode from "./multiple/Swebcode";
+
+
+
 
 function App() {
   const { loggedUser } = useContext(DataContext);
@@ -40,8 +53,8 @@ function App() {
           !loggedUser &&
           <>
           <Route path='/' element={<Home />} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/confirm/:id' element={<Confirmation />} />
+          <Route path='/signup' element={<Caccount />} />
+          <Route path='/confirm/:id' element={<Verify />} />
 
 
 
@@ -51,17 +64,17 @@ function App() {
 {
           loggedUser && !loggedUser.isMentor &&
           <>
-            <Route path='/' element={<Roadmap />} />
-            <Route path='/class' element={<Roadmap />} />
-            <Route path='/dashboard' element={<Dashboard />} />
-            <Route path='/task' element={<Task />} />
-            <Route path='/certificate' element={<Certificate />} />
-            <Route path='/mock' element={<Mock />} />
-            <Route path='/leave' element={<Leave />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/queries' element={<Queries />} />
-            <Route path='/capstone' element={<Capstone />} />
-            <Route path='/webcode' element={<Webcode />} />
+            <Route path='/' element={<Zroadmap />} />
+            <Route path='/class' element={<Zroadmap />} />
+            <Route path='/dashboard' element={<Ndashboard />} />
+            <Route path='/task' element={<Rtask />} />
+            <Route path='/certificate' element={<Ncertificate />} />
+            <Route path='/mock' element={<Imock />} />
+            <Route path='/leave' element={<Nleave />} />
+            <Route path='/portfolio' element={<Cportfolio />} />
+            <Route path='/queries' element={<Tqueries />} />
+            <Route path='/capstone' element={<Scapstone />} />
+            <Route path='/webcode' element={<Swebcode />} />
 
 
   </>

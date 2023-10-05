@@ -3,9 +3,8 @@ import './capstone.css';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { useContext } from 'react';
 import DataContext from '../context/DataContext';
-//import { ToastContainer, Zoom } from 'react-toastify';
-
-const Capstone = () => {
+function Scapstone() {
+  
     const {
         loggedUser,
         trigger,
@@ -360,5 +359,4 @@ const Capstone = () => {
     )
 }
 
-export default Capstone;
-
+export default Scapstone

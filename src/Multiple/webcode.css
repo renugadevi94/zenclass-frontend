@@ -2,7 +2,7 @@
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
-    margin-top: 5rem; /* Adjust the top margin as needed */
+    margin-top: 5rem; 
 }
 
 /* Styles for user information */
@@ -20,7 +20,7 @@
     color: #777;
 }
 
-/* Styles for Webcode score */
+
 .marktag {
     background-color: #007bff;
     color: #fff;
@@ -30,12 +30,12 @@
 
 
 
-/* Styles for description */
+
 .col-12 {
     margin-top: 1rem;
 }
 
-/* Styles for comments container */
+
 .marksContainer {
     margin-top: 1rem;
 }
@@ -46,12 +46,12 @@
     border-radius: 5px;
 }
 
-/* Styles for form errors */
+
 .error {
     color: red;
 }
 
-/* Styles for submit button */
+
 .submit__capstone {
     background-color: #007bff;
     color: #fff;
@@ -66,24 +66,24 @@
     background-color: #0056b3;
 }
 
-/* Styles for table */
+
 .table {
     width: 100%;
     margin-top: 1rem;
 }
 
-/* Styles for table links */
+
 .table a {
     text-decoration: none;
     color: #007bff;
 }
 
-/* Styles for table links on hover */
+
 .table a:hover {
     text-decoration: underline;
 }
 
-/* Styles for spinner */
+
 .spinner-border {
     color: #ffc107;
 }
