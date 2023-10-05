@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import api from "../api";
 import { roadMapData } from "../roadmapdata";
-import Winsize from "../multiple/Winsize";
+import Winsize from "../pages/Winsize";
 
 
 const DataContext = createContext({});

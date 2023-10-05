@@ -1,38 +1,23 @@
-import React, {useContext}  from "react"
-import './App.css'
-
-import { Route,Routes } from "react-router-dom"
-
-//import Signup from "./multiple/Signup"
-
+import React, {useContext}  from "react";
+import './App.css';
+import { Route,Routes } from "react-router-dom";
 import DataContext from "./context/DataContext";
-
-
-
-
-
-
-
-// import Webcode from "./multiple/Webcode"
-// import Capstone from "./Multiple/Capstone";
-
 
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Home from "./multiple/Home";
-import Caccount from "./multiple/Caccount";
-import Verify from "./multiple/Verify";
-import Zroadmap from "./multiple/Zroadmap";
-import Ndashboard from "./multiple/Ndashboard";
-import Rtask from "./multiple/Rtask";
-import Ncertificate from "./multiple/Ncertificate";
-import Imock from "./multiple/Imock";
-import Nleave from "./multiple/Nleave";
-import Cportfolio from "./multiple/Cportfolio";
-import Tqueries from "./multiple/Tqueries";
-import Scapstone from "./multiple/Scapstone";
-import Swebcode from "./multiple/Swebcode";
-
+import Home from "./pages/Home";
+import Caccount from "./pages/Caccount";
+import Verify from "./pages/Verify";
+import Zroadmap from "./pages/Zroadmap";
+import Ndashboard from "./pages/Ndashboard";
+import Rtask from "./pages/Rtask";
+import Ncertificate from "./pages/Ncertificate";
+import Imock from "./pages/Imock";
+import Nleave from "./pages/Nleave";
+import Cportfolio from "./pages/Cportfolio";
+import Tqueries from "./pages/Tqueries";
+import Scapstone from "./pages/Scapstone";
+import Swebcode from "./pages/Swebcode";
 
 
 
