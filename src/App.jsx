@@ -2,22 +2,26 @@ import React, {useContext}  from "react"
 import './App.css'
 
 import { Route,Routes } from "react-router-dom"
-import Login from "./MULTIPLEPAGE/login"
-import Signup from "./MULTIPLEPAGE/Signup"
-import Confirmation from "./MULTIPLEPAGE/Confirmation";
-import Dashboard from "./MULTIPLEPAGE/Dashboard";
+
+import Signup from "./multiple/Signup"
+
 import DataContext from "./context/DataContext";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Roadmap from "./MULTIPLEPAGE/Roadmap";
-import Task from "./MULTIPLEPAGE/Task";
-import Certificate from "./MULTIPLEPAGE/Certificate";
-import Mock from "./MULTIPLEPAGE/Mock";
-import Leave from "./MULTIPLEPAGE/Leave";
-import Portfolio from "./MULTIPLEPAGE/Portfolio";
-import Queries from "./MULTIPLEPAGE/Queries";
-import Capstone from "./MULTIPLEPAGE/Capstone";
-import Webcode from "./MULTIPLEPAGE/Webcode"
+import Roadmap from "./multiple/Roadmap";
+import Task from "./multiple/Task";
+
+import Mock from "./multiple/Mock";
+import Leave from "./multiple/Leave";
+import Portfolio from "./multiple/Portfolio";
+import Queries from "./multiple/Queries";
+
+import Webcode from "./multiple/Webcode"
+import Capstone from "./Multiple/Capstone";
+import Certificate from "./Multiple/Certificate";
+import Dashboard from "./Multiple/Dashboard";
+import Confirmation from "./Multiple/Confirmation";
+import Home from "./multiple/Home";
 
 function App() {
   const { loggedUser } = useContext(DataContext);
@@ -35,7 +39,7 @@ function App() {
 {
           !loggedUser &&
           <>
-          <Route path='/' element={<Login />} />
+          <Route path='/' element={<Home />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/confirm/:id' element={<Confirmation />} />
 

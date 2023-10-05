@@ -1,13 +1,10 @@
+//import React from 'react'
 import React, { useState,useContext } from 'react';
-import "./login.css";
+import "./home.css";
 import zen from '../assets/zen.png';
-
 import { Link } from "react-router-dom";
 import DataContext from "../context/DataContext";
-//import { toast } from 'react-toastify'; 
-
-
-const Login = () => {
+function Home() {
     const { handleSignIn, isLoading } = useContext(DataContext);
     
     const [email, setEmail] = useState('');
@@ -80,5 +77,5 @@ const Login = () => {
         </div>
   );
 };
-
-export default Login;
+  
+export default Home;
