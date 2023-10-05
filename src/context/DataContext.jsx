@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import api from "../api";
 import { roadMapData } from "../roadmapdata";
-import Responsive from "../main/Responsive";
+import Responsive from "../MULTIPLEPAGE/Responsive";
 
 
 const DataContext = createContext({});

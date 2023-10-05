@@ -2,22 +2,22 @@ import React, {useContext}  from "react"
 import './App.css'
 
 import { Route,Routes } from "react-router-dom"
-import Login from "./main/login"
-import Signup from "./main/Signup"
-import Confirmation from "./main/Confirmation";
-import Dashboard from "./main/Dashboard";
+import Login from "./MULTIPLEPAGE/login"
+import Signup from "./MULTIPLEPAGE/Signup"
+import Confirmation from "./MULTIPLEPAGE/Confirmation";
+import Dashboard from "./MULTIPLEPAGE/Dashboard";
 import DataContext from "./context/DataContext";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import Roadmap from "./main/Roadmap";
-import Task from "./main/Task";
-import Certificate from "./main/Certificate";
-import Mock from "./main/Mock";
-import Leave from "./main/Leave";
-import Portfolio from "./main/Portfolio";
-import Queries from "./main/Queries";
-import Capstone from "./main/Capstone";
-import Webcode from "./main/Webcode"
+import Roadmap from "./MULTIPLEPAGE/Roadmap";
+import Task from "./MULTIPLEPAGE/Task";
+import Certificate from "./MULTIPLEPAGE/Certificate";
+import Mock from "./MULTIPLEPAGE/Mock";
+import Leave from "./MULTIPLEPAGE/Leave";
+import Portfolio from "./MULTIPLEPAGE/Portfolio";
+import Queries from "./MULTIPLEPAGE/Queries";
+import Capstone from "./MULTIPLEPAGE/Capstone";
+import Webcode from "./MULTIPLEPAGE/Webcode"
 
 function App() {
   const { loggedUser } = useContext(DataContext);
