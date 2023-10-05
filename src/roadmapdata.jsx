@@ -3,7 +3,7 @@ import { BsPieChartFill,BsReverseLayoutTextWindowReverse, BsFillHouseDoorFill, B
 import { MdOutlineDeveloperMode } from "react-icons/md";
 
 
-
+//roadmap data
 export const navBarData = [
     {
         id: 1,
