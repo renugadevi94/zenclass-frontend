@@ -18,6 +18,8 @@ import Cportfolio from "./pages/Cportfolio";
 import Tqueries from "./pages/Tqueries";
 import Scapstone from "./pages/Scapstone";
 import Swebcode from "./pages/Swebcode";
+import Forgot from "./pages/Forgot";
+import Reset from "./pages/Reset";
 
 
 
@@ -38,8 +40,10 @@ function App() {
           !loggedUser &&
           <>
           <Route path='/' element={<Home />} />
-          <Route path='/signup' element={<Caccount />} />
+          <Route path='/signup' element={<Caccount />} />    
           <Route path='/confirm/:id' element={<Verify />} />
+          <Route path='/forgot' element={<Forgot />} />
+          <Route path='/reset/:id' element={<Reset />} />
 
 
 

@@ -1,4 +1,4 @@
-//import React from 'react'
+
 import React, { useState,useContext } from 'react';
 import "./home.css";
 import zen from '../assets/zen.png';
@@ -9,8 +9,7 @@ function Home() {
     
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    //const [errorMessage, setErrorMessage] = useState(''); // Add error message state
-
+    
 
 
     const handleEmailChange = (e) => {
@@ -23,14 +22,10 @@ function Home() {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        //try {
+        
            handleSignIn({ email, password });
-        //   toast.success('Login successful'); // Show success toast
-        // } catch (error) {
-        //   toast.error('Login failed. Please check your credentials.'); // Show error toast
-        // }
+        
       };
-
     return (
         <div className="login-container">
           <div className="login-form">
@@ -62,7 +57,7 @@ function Home() {
                 
                 </button>
               
-            </form>
+                </form>
             <Link to='/forgot'
                 className='forgot-password btn forgot btn-outline-danger mb-2'
               >
